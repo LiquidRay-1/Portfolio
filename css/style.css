@@ -45,7 +45,7 @@ nav ul li a {
 }
 
 .content-container {
-    margin-top: 100px;
+    margin-top: 300px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -54,4 +54,26 @@ nav ul li a {
     align-content: center;
     align-items: center;
     height: 90vh;
+}
+
+.portfolio {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
