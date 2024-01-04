@@ -45,7 +45,7 @@ nav ul li a {
 }
 
 .content-container {
-    margin-top: 300px;
+    margin-top: 900px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -76,4 +76,57 @@ nav ul li a {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 10px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.skill-item {
+    margin-bottom: 20px;
+}
+
+.skill-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    text-align: center; /* Alineación del texto */
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px; /* Ancho máximo para la sección */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.about-image img {
+    width: 300px; /* Tamaño de la imagen del autoretrato */
+    height: auto;
+    border-radius: 50%; /* Para redondear la imagen */
+    margin-right: 40px; /* Espacio entre la imagen y el texto */
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0; /* Elimina el margen por defecto */
+    text-align: left; /* Alineación del texto a la izquierda */
 }
