@@ -126,6 +126,7 @@ nav ul li a {
     height: auto;
     border-radius: 50%; /* Para redondear la imagen */
     margin-right: 40px; /* Espacio entre la imagen y el texto */
+    margin-left: 40px;
 }
 
 .about-text p {
