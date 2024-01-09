@@ -8,6 +8,10 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 
+input#menu-toggle {
+    display: none !important; /* Agrega !important para priorizar el estilo */
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -162,15 +166,79 @@ a {
 }
 
 /* Mobile-first: Estilos para dispositivos móviles y pantallas pequeñas */
+
 @media screen and (max-width: 767px) {
-    /* Ajustes para el header */
+    body {
+        font-size: 16px; /* Tamaño de fuente base para móviles */
+    }
+
     header {
-        height: 15vh;
+        height: 10vh;
         padding: 10px;
     }
 
     .logo img {
         max-width: 60px;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        border-radius: 3px;
+        transition: background-color 0.3s ease;
+    }
+
+    #menu-toggle:checked + .menu-btn .menu-icon {
+        background-color: transparent;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        background-color: #000;
+        display: none;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    #menu-toggle:checked + .menu-btn + .menu {
+        display: block;
+    }
+
+    .menu li {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .menu li a {
+        text-decoration: none;
+        color: white;
     }
 
     nav ul {
@@ -180,17 +248,38 @@ a {
 
     nav ul li {
         margin: 10px 0;
+        text-align: center; /* Centra el texto */
     }
 
-    /* Ajustes para la sección "Acerca de" */
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
     .about-image img {
         width: 150px;
-        margin-right: 0;
         margin-bottom: 20px;
+        align-self: center; /* Centra la imagen horizontalmente */
+    }
+
+    .about-image {
+        text-align: center; /* Centra la imagen horizontalmente */
     }
 
     .about-text p {
         text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-icons img {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
     }
 
     /* Ajustes para las tarjetas en la sección Portfolio */
@@ -198,12 +287,4 @@ a {
         width: 90%;
         margin: 0 auto 20px;
     }
-}
-
-/* Estilos para tabletas y pantallas más grandes */
-@media screen and (min-width: 768px) {
-}
-
-/* Estilos para pantallas más grandes */
-@media screen and (min-width: 1024px) {
 }
