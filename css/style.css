@@ -205,10 +205,6 @@ a {
         transition: background-color 0.3s ease;
     }
 
-    #menu-toggle:checked + .menu-btn .menu-icon {
-        background-color: transparent;
-    }
-
     #menu-toggle {
         display: none;
     }
