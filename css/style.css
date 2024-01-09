@@ -183,6 +183,11 @@ a {
         width: 300px
     }
 
+    .home-logo{
+        height: 250px
+        width: 300px
+    }
+
     .nav-links {
         display: flex;
         justify-content: space-between;
