@@ -160,3 +160,50 @@ a {
     text-decoration: none; /* Elimina el subrayado */
     color: inherit; /* Hereda el color del texto */
 }
+
+/* Mobile-first: Estilos para dispositivos móviles y pantallas pequeñas */
+@media screen and (max-width: 767px) {
+    /* Ajustes para el header */
+    header {
+        height: 15vh;
+        padding: 10px;
+    }
+
+    .logo img {
+        max-width: 60px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Ajustes para la sección "Acerca de" */
+    .about-image img {
+        width: 150px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-text p {
+        text-align: center;
+    }
+
+    /* Ajustes para las tarjetas en la sección Portfolio */
+    .card {
+        width: 90%;
+        margin: 0 auto 20px;
+    }
+}
+
+/* Estilos para tabletas y pantallas más grandes */
+@media screen and (min-width: 768px) {
+}
+
+/* Estilos para pantallas más grandes */
+@media screen and (min-width: 1024px) {
+}
